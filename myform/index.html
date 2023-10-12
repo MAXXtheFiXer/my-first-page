@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>My Form</title>
@@ -11,37 +11,69 @@
 <h1>Hello PROGmasters!</h1>
 <h2>Here is a sample form styled <i>(by hand)</i>:</h2>
 
-<div id="form-div">
-    <form id="my-form">
+<form id="my-form">
+    <div>
         <label for="input-name">Name: </label><br>
-        <input type="text" id="input-name"/><br>
+        <input type="text" id="input-name"/>
+    </div>
 
+    <div>
         <label for="input-password">Password: </label><br>
-        <input type="password" id="input-password"/><br>
+        <input type="password" id="input-password"/>
+    </div>
 
+    <div>
         <label for="input-birth-year">Birth year: </label><br>
-        <input type="number" id="input-birth-year"/><br>
+        <input type="number" id="input-birth-year"/>
+    </div>
 
+    <div>
         <label for="input-email">Email: </label><br>
-        <input type="text" id="input-email"/><br>
+        <input type="email" id="input-email"/>
+    </div>
 
-        <label for="input-email">When do you get up usually?: </label><br>
-        <input type="time" id="input-wakeup-timer"/><br>
+    <div>
+        <label for="input-wakeup-timer">When do you get up usually?: </label><br>
+        <input type="time" id="input-wakeup-timer"/><br><br>
+    </div>
 
-        Gender:
-        <label for="gender_female">Female</label>
-        <input type="radio" id="gender_female" value="Female">
+    Gender:
+    <label for="gender_female">Female</label>
+    <input type="radio" name="gender" id="gender_female" value="Female">
 
-        <input type="radio" id="gender_male" value="Male">
-        <label for="gender_female">Male</label>
+    <label for="gender_female">Male</label>
+    <input type="radio" name="gender" id="gender_male" value="Male">
 
-        <label for="gender_female">Other</label>
-        <input type="radio" id="gender_other" value="Other">
+    <label for="gender_female">Other</label>
+    <input type="radio" name="gender" id="gender_other" value="Other">
 
-        <br>
+<!--    *** -->
+    <br><br>
+    <div>
+        Languages spoken:
+        <input type="checkbox"/><label>English</label>
+        <input type="checkbox"/><label>German</label>
+    </div><br>
 
-    </form>
-</div>
+    <div>
+        <select>
+            <option>Core Java</option>
+            <option>Clean Code</option>
+        </select>
+    </div><br>
+
+    <div>
+        <select multiple="multiple">
+            <option>Core Java</option>
+            <option>Clean Code</option>
+        </select>
+    </div>
+
+
+    <br>
+
+</form>
+
 
 </body>
 </html>
